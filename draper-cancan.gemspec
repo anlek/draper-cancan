@@ -4,7 +4,7 @@ require "draper/cancan/version"
 
 Gem::Specification.new do |s|
   s.name        = "draper-cancan"
-  s.version     = Draper::Cancan::VERSION
+  s.version     = Draper::CanCan::VERSION
   s.authors     = ["Andrew Kalek"]
   s.email       = ["andrew.kalek@anlek.com"]
   s.homepage    = ""

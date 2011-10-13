@@ -1,5 +1,5 @@
 module Draper
-  module Cancan
+  module CanCan
     VERSION = "0.1.0"
   end
 end
