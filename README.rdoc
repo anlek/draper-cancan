@@ -29,13 +29,17 @@ also you get some quick methods like
   user_decorator.deletable? #or user_decorator.destroyable?
 
 
+== Spacial Thanks
+This would be pointless without the awesome work done by:
+- Jeff Casimir on {Draper}[https://github.com/jcasimir/draper]
+- Ryan Bates on {CanCan}[https://github.com/ryanb/cancan]
+
 == Development
 
 === Requirements
 
 You just need bundler >= 1.0
 
-  gem install bundler #if you don't have it
   bundle install
   bundle exec ruby spec/draper/cancan_spec.rb
 
