@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Andrew Kalek"]
   s.email       = ["andrew.kalek@anlek.com"]
   s.homepage    = ""
-  s.summary     = %q{Adds some simple methods to your decorators to make it easier to use with rbates CanCan gem}
-  s.description = %q{Adds some simple methods to your decorators to make it easier to use with rbates CanCan gem}
+  s.summary     = %q{Adds some simple methods to your decorators to make it easier to use with the CanCan gem}
+  s.description = %q{Adds some simple methods to your decorators to make it easier to use with the CanCan gem}
 
   s.rubyforge_project = "draper-cancan"
 
