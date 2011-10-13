@@ -1,0 +1,72 @@
+= Draper-CanCan
+
+Draper-CanCan adds a few simple methods to your decorators to make it easier to work with cancan
+
+== Install
+
+Add to your gemfile:
+  gem 'draper-cancan'
+
+== Usage
+
+Inside your ApplicationDecorator.rb (or a specific decorator) just add
+
+  class ApplicationDecorator < Draper::Base
+    include Draper::CanCan
+  end
+    
+And now you'll have access to a few helpful methods like
+
+  user_decorator.able_to? :read  #=> calls can? :read, user_decorator.model
+  user_decorator.unable_to? :destroy  #=> calls cannot? :destory, user_decorator.model
+  
+also you get some quick methods like
+  user_decorator.creatable?
+  user_decorator.editable?
+  user_decorator.updatable?
+  user_decorator.readable?
+  user_decorator.managable?
+  user_decorator.deletable? #or user_decorator.destroyable?
+
+
+== Development
+
+=== Requirements
+
+You just need bundler >= 1.0
+
+  gem install bundler #if you don't have it
+  bundle install
+  bundle exec ruby spec/draper/cancan_spec.rb
+
+== About
+
+This gem was made by Andrew Kalek from Anlek Consulting
+
+Reach me at:
+* Twitter: {@anlek}[http://www.twitter.com/anlek]
+* Email: andrew.kalek@anlek[dot]com
+
+
+== License
+
+Copyright (c) 2011 Andrew Kalek, Anlek Consulting
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
