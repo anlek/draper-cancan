@@ -20,5 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'draper'
   s.add_runtime_dependency 'cancan'
-  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'minitest'
+  s.add_development_dependency 'mocha'
+  s.add_development_dependency 'active_support'
 end
