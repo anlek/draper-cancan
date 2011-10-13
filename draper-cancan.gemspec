@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Draper::CanCan::VERSION
   s.authors     = ["Andrew Kalek"]
   s.email       = ["andrew.kalek@anlek.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/anlek/draper-cancan"
   s.summary     = %q{Adds some simple methods to your decorators to make it easier to use with the CanCan gem}
   s.description = %q{Adds some simple methods to your decorators to make it easier to use with the CanCan gem}
 
