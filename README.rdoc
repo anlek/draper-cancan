@@ -29,7 +29,7 @@ also you get some quick methods like
   user_decorator.deletable? #or user_decorator.destroyable?
 
 
-== Spacial Thanks
+== Special Thanks
 This would be pointless without the awesome work done by:
 - Jeff Casimir on {Draper}[https://github.com/jcasimir/draper]
 - Ryan Bates on {CanCan}[https://github.com/ryanb/cancan]
