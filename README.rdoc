@@ -1,4 +1,6 @@
-= Draper-CanCan
+= Draper-CanCan (DEPRECATED)
+
+** Draper-cancan is no longer to recommended way, checkout {draper-cancancan}[https://github.com/GoodMeasuresLLC/draper-cancancan] to get the benefit of draper and cancan(can) without having to use custom DSL **
 
 Draper-CanCan adds a few simple methods to your decorators to make it easier to work with cancan
 
@@ -14,12 +16,12 @@ Inside your ApplicationDecorator.rb (or a specific decorator) just add
   class ApplicationDecorator < Draper::Base
     include Draper::CanCan
   end
-    
+
 And now you'll have access to a few helpful methods like
 
   user_decorator.able_to? :read  #=> calls can? :read, user_decorator.model
   user_decorator.unable_to? :destroy  #=> calls cannot? :destory, user_decorator.model
-  
+
 also you get some quick methods like
   user_decorator.creatable?
   user_decorator.editable?
